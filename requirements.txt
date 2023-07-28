@@ -1,6 +1,9 @@
 graphviz
 matplotlib
+networkx
 numpy
 pandas
+scikit-learn
 seaborn
 statsmodels
+toolz
