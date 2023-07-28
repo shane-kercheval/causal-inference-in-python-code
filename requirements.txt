@@ -1,4 +1,9 @@
+cmake
+osqp==0.6.1
+cvxpy
+fklearn
 graphviz
+linearmodels
 matplotlib
 networkx
 numpy
