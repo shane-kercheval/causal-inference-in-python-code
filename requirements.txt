@@ -3,12 +3,14 @@ osqp==0.6.1
 cvxpy
 fklearn
 graphviz
+lightgbm
 linearmodels
 matplotlib
 networkx
 numpy
 pandas
 scikit-learn
+scipi
 seaborn
 statsmodels
 toolz
