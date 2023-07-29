@@ -18,15 +18,18 @@ install_requirements:
 
 notebooks:
 	sudo jupyter nbconvert --to notebook --execute --inplace Simulated-Data.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
-	# jupyter nbconvert --execute causal-inference-in-python/.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/01-Introduction-To-Causal-Inference.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/02-Randomised-Experiments-and-Stats-Review.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/03-Graphical-Models.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/04-The-Unreasonable-Effectiveness-of-Linear-Regression.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/05-Propensity-Score.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/06-Effect-Heterogeneity.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/07-Meta-Learners.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/08-Difference-in-Differences.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/09-Synthetic-Control.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/10-Geo-and-Switchback-Experiments.ipynb
+	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/11-Non-Compliance-and-Instruments.ipynb
+
 
 run: clone_fk_learn update_fk_learn build_fk_learn install_requirements
 	
