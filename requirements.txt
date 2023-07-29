@@ -3,10 +3,13 @@ osqp==0.6.1
 cvxpy
 fklearn
 graphviz
+jupyter-contrib-nbextensions
 lightgbm
 linearmodels
 matplotlib
 networkx
+nbconvert
+notebook==6.5.4
 numpy
 pandas
 scikit-learn
