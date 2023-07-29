@@ -30,5 +30,4 @@ notebooks:
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/10-Geo-and-Switchback-Experiments.ipynb
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/11-Non-Compliance-and-Instruments.ipynb
 
-
 all: clone_fk_learn update_fk_learn build_fk_learn install_requirements notebooks
