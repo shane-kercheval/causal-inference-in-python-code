@@ -31,5 +31,4 @@ notebooks:
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/11-Non-Compliance-and-Instruments.ipynb
 
 
-run: clone_fk_learn update_fk_learn build_fk_learn install_requirements
-	
+run: clone_fk_learn update_fk_learn build_fk_learn install_requirements notebooks
