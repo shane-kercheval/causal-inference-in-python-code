@@ -13,11 +13,16 @@ build_fk_learn:
 install_requirements:
 	sudo apt-get update -y
 	sudo apt-get install cmake -y
+	sudo apt-get install graphviz -y
 	sudo pip install --upgrade pip
 	sudo pip install -r requirements.txt
 
-notebooks:
+environment: clone_fk_learn update_fk_learn build_fk_learn install_requirements
+
+data:
 	sudo jupyter nbconvert --to notebook --execute --inplace Simulated-Data.ipynb
+
+notebooks:
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/01-Introduction-To-Causal-Inference.ipynb
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/02-Randomised-Experiments-and-Stats-Review.ipynb
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/03-Graphical-Models.ipynb
@@ -30,4 +35,4 @@ notebooks:
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/10-Geo-and-Switchback-Experiments.ipynb
 	sudo jupyter nbconvert --to notebook --execute --inplace causal-inference-in-python/11-Non-Compliance-and-Instruments.ipynb
 
-all: clone_fk_learn update_fk_learn build_fk_learn install_requirements notebooks
+all: environment data notebooks
